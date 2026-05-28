@@ -172,7 +172,7 @@ export default function Transformation() {
                 ESTIMATE DEFICIT & CALORIES
               </h3>
               <p className="text-zinc-400 text-xs font-light mb-6 leading-relaxed">
-                Calculate daily targets, protein counts, safe timelines and discover the appropriate Tiger plan for your physique.
+                Calculate daily targets, protein counts, safe timelines and discover the appropriate membership plan for your physique.
               </p>
 
               <form onSubmit={calculateTarget} id="physique-planner-form" className="space-y-4">
@@ -305,8 +305,8 @@ export default function Transformation() {
                     <button
                       id="btn-calc-apply"
                       onClick={() => {
-                        const text = encodeURIComponent(`Hi Tiger Fitness! I used your online Physique Planner and got a daily target of ${calcResult.dailyCal} kcal, ${calcResult.protein}g protein, with a transition timeframe of ${calcResult.durationWeeks} weeks. I'm excited to enrol for my branch trials!`);
-                        window.open(`https://wa.me/916202730517?text=${text}`, '_blank');
+                        const text = encodeURIComponent(`Hi The Rock Gym! I used your online Physique Planner and got a daily target of ${calcResult.dailyCal} kcal, ${calcResult.protein}g protein, with a transition timeframe of ${calcResult.durationWeeks} weeks. I'm excited to enrol for my branch trials!`);
+                        window.open(`https://wa.me/918227822710?text=${text}`, '_blank');
                       }}
                       className="w-full py-3.5 rounded-xl bg-zinc-950 hover:bg-zinc-900 text-zinc-300 hover:text-white font-display font-bold text-xs uppercase tracking-wider flex items-center justify-center space-x-2 transition-all cursor-pointer border border-zinc-850 hover:border-cyan-500/25 duration-300"
                     >

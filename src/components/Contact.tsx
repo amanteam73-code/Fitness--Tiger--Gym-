@@ -40,8 +40,8 @@ export default function Contact() {
       setIsSubmitting(false);
       setSubmitSuccess(true);
       
-      const text = encodeURIComponent(`Hi Tiger Fitness! I'm ${formName}. I'm writing through the website form. I am interested in "${formService}". Message: ${formMessage}. Phone: ${formPhone}. Let me know slot openings!`);
-      window.open(`https://wa.me/916202730517?text=${text}`, '_blank');
+      const text = encodeURIComponent(`Hi The Rock Gym! I'm ${formName}. I'm writing through the website form. I am interested in "${formService}". Message: ${formMessage}. Phone: ${formPhone}. Let me know slot openings!`);
+      window.open(`https://wa.me/918227822710?text=${text}`, '_blank');
 
       setTimeout(() => {
         setSubmitSuccess(false);
@@ -53,7 +53,7 @@ export default function Contact() {
     }, 1500);
   };
 
-  const googleMapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.5819777592476!2d85.16664987629633!3d25.618779977443187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed58ee5b5b5b5b%3A0x2db4ea47970d4ab!2sRampur%20Ln%2C%20Patna%2CBihar%20800006!5e0!3m2!1sen!2sin!4v1703620000000!5m2!1sen!2sin";
+  const googleMapSrc = "https://maps.google.com/maps?q=K%20D%20Roy%20Campus%20NIT%20More%20Lalbagh%20Patna&t=&z=15&ie=UTF8&iwloc=&output=embed";
 
   return (
     <section id="contact" className="py-24 relative bg-[#06050b] bg-grid-pattern overflow-hidden border-t border-purple-500/10">
@@ -70,7 +70,7 @@ export default function Contact() {
             START YOUR <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 font-black">TRANSFORMATION TODAY</span>
           </h2>
           <p className="text-zinc-400 text-sm sm:text-base font-light mt-4 leading-relaxed">
-            Visit our state-of-the-art facility in Rampur Lane, Bahadurpur. Send us a message or tap below to directly message our fitness consultants.
+            Visit our state-of-the-art facility in NIT More, Lalbagh. Send us a message or tap below to directly message our fitness consultants.
           </p>
         </div>
 
@@ -80,7 +80,7 @@ export default function Contact() {
           {/* Column 1 info list */}
           <div className="lg:col-span-5 space-y-8">
             <h3 className="font-display font-black text-2xl text-white uppercase tracking-wider mb-2 leading-none">
-              TIGER FITNESS <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500">HQ PATNA</span>
+              THE ROCK GYM <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500">HQ PATNA</span>
             </h3>
 
             {/* Address */}
@@ -195,7 +195,7 @@ export default function Contact() {
                     <input
                       type="tel"
                       required
-                      placeholder="e.g., 6202730517"
+                      placeholder="e.g., 082278 22710"
                       value={formPhone}
                       onChange={(e) => setFormPhone(e.target.value)}
                       className="w-full px-4 py-3 rounded-xl bg-zinc-900 border border-zinc-805 text-white focus:outline-none focus:border-cyan-500 text-sm font-sans"
@@ -297,7 +297,7 @@ export default function Contact() {
 
             {/* Location (White/Gold Contact Accent) */}
             <a 
-              href="https://maps.google.com/?q=Tiger+Fitness+Bahadurpur+Patna"
+              href="https://maps.google.com/?q=The+Rock+Gym+NIT+More+Lalbagh+Patna"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-center space-x-3 px-6 py-4 rounded-2xl bg-cyan-950/20 border border-cyan-500/20 text-cyan-400 hover:bg-cyan-500 hover:text-black hover:shadow-[0_0_20px_rgba(6,182,212,0.3)] hover:border-transparent transition-all duration-300 group cursor-pointer"
@@ -319,14 +319,14 @@ export default function Contact() {
             allowFullScreen={false}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Tiger Fitness Patna Place Map"
+            title="The Rock Gym Patna Place Map"
             className="w-full h-full grayscale opacity-65 hover:grayscale-0 hover:opacity-100 transition-all duration-500"
           />
           {/* Absolute corner badge map label */}
           <div className="absolute bottom-6 left-6 bg-zinc-950 text-white rounded-2xl p-4 border border-zinc-800 shadow-2xl max-w-sm pointer-events-none hidden sm:block">
-            <div className="font-display font-black text-xs text-cyan-400 uppercase tracking-widest">TIGER FITNESS LOCATION</div>
+            <div className="font-display font-black text-xs text-cyan-400 uppercase tracking-widest">THE ROCK GYM LOCATION</div>
             <p className="text-zinc-400 text-[10px] mt-1 font-light leading-snug">
-              1st Floor, Near Ram Ratan Hospital, Rampur Lane, Bazar Samiti, Bahadurpur, Patna-800006
+              4th Floor, K D Roy Campus, NIT More, Lalbagh, Patna, Bihar 800006
             </p>
           </div>
         </div>

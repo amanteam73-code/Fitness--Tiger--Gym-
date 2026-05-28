@@ -17,7 +17,7 @@ export default function Logo({ className = "w-12 h-12", showText = true }: LogoP
         {/* Glow behind the logo */}
         <div className="absolute -inset-1.5 rounded-full bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 opacity-40 blur-lg group-hover:opacity-75 transition duration-300" />
         
-        {/* High Definition Vector Shield & Tiger Logo */}
+        {/* High Definition Vector Shield & Rock Logo */}
         <svg
           viewBox="0 0 120 120"
           className="w-full h-full relative z-10 filter drop-shadow-[0_4px_12px_rgba(6,182,212,0.3)] transform group-hover:scale-105 transition-transform duration-300"
@@ -37,7 +37,7 @@ export default function Logo({ className = "w-12 h-12", showText = true }: LogoP
               <stop offset="0%" stopColor="#ec4899" />
               <stop offset="100%" stopColor="#7c3aed" />
             </linearGradient>
-            <filter id="eyeGlow" x="-20%" y="-20%" width="140%" height="140%">
+            <filter id="rockGlow" x="-20%" y="-20%" width="140%" height="140%">
               <feGaussianBlur stdDeviation="1.5" result="blur" />
               <feComposite in="SourceGraphic" in2="blur" operator="over" />
             </filter>
@@ -59,84 +59,99 @@ export default function Logo({ className = "w-12 h-12", showText = true }: LogoP
             opacity="0.18" 
           />
 
-          {/* MUSCULAR TRAPS / SHOULDERS (FLANKING THE SHIELD BASE) */}
-          {/* Left Muscular Triceps/Traps */}
-          <path 
-            d="M 12,50 C -4,35 2,12 25,18 C 22,34 26,45 35,52" 
-            fill="none" 
-            stroke="url(#cyanBlueGrad)" 
-            strokeWidth="2.5" 
-            opacity="0.6"
-          />
-          {/* Right Muscular Triceps/Traps */}
-          <path 
-            d="M 108,50 C 124,35 118,12 95,18 C 98,34 94,45 85,52" 
-            fill="none" 
-            stroke="url(#cyanBlueGrad)" 
-            strokeWidth="2.5" 
-            opacity="0.6"
+          {/* GEOMETRIC SOLID ROCK STRUCTURE */}
+          {/* Facet 1: Left Center Facet */}
+          <polygon 
+            points="60,26 45,65 60,94" 
+            fill="url(#cyanBlueGrad)" 
+            opacity="0.85" 
+            stroke="#ffffff" 
+            strokeWidth="0.5" 
+            strokeOpacity="0.2"
           />
 
-          {/* TIGER GEOMETRICS & FACIAL STRIPES */}
-          {/* Outer Ears */}
-          <polygon points="36,36 22,20 48,30" fill="#0c0f24" stroke="url(#neonGradient)" strokeWidth="1.5" />
-          <polygon points="84,36 98,20 72,30" fill="#0c0f24" stroke="url(#neonGradient)" strokeWidth="1.5" />
-          
-          {/* Inner Ears */}
-          <polygon points="34,33 26,23 42,29" fill="#ec4899" opacity="0.8" />
-          <polygon points="86,33 94,23 78,29" fill="#ec4899" opacity="0.8" />
+          {/* Facet 2: Right Center Facet */}
+          <polygon 
+            points="60,26 75,65 60,94" 
+            fill="url(#neonGradient)" 
+            opacity="0.9" 
+            stroke="#ffffff" 
+            strokeWidth="0.5" 
+            strokeOpacity="0.2"
+          />
 
-          {/* Crown Stripes */}
-          <path d="M 60,20 L 55,30 L 65,30 Z" fill="url(#neonGradient)" />
-          <path d="M 60,32 L 52,42 L 68,42 Z" fill="#020617" stroke="url(#cyanBlueGrad)" strokeWidth="1" />
+          {/* Facet 3: Left Outer Facet */}
+          <polygon 
+            points="60,26 23,80 45,65" 
+            fill="#1e1b4b" 
+            opacity="0.6" 
+            stroke="url(#cyanBlueGrad)" 
+            strokeWidth="0.5" 
+          />
 
-          {/* Cheek Whisker Shapes (Muscular Side Swipes) */}
-          <polygon points="26,52 42,56 31,64" fill="url(#neonGradient)" />
-          <polygon points="94,52 78,56 89,64" fill="url(#neonGradient)" />
-          <polygon points="24,66 40,68 28,78" fill="url(#neonGradient)" />
-          <polygon points="96,66 80,68 92,78" fill="url(#neonGradient)" />
+          {/* Facet 4: Right Outer Facet */}
+          <polygon 
+            points="60,26 97,80 75,65" 
+            fill="#311042" 
+            opacity="0.6" 
+            stroke="url(#neonGradient)" 
+            strokeWidth="0.5" 
+          />
 
-          {/* Forehead Plates */}
-          <polygon points="46,45 60,38 74,45 60,50" fill="#030712" stroke="url(#cyanBlueGrad)" strokeWidth="1.5" />
+          {/* Facet 5: Left Lower Facet */}
+          <polygon 
+            points="45,65 23,80 60,94" 
+            fill="url(#pinkPurpleGrad)" 
+            opacity="0.75" 
+            stroke="#ffffff" 
+            strokeWidth="0.5" 
+            strokeOpacity="0.2"
+          />
 
-          {/* EYES (CYAN NEON GLOW) */}
-          <polygon points="38,55 52,57 48,51 39,51" fill="#000000" stroke="#06b6d4" strokeWidth="2" />
-          <circle cx="44" cy="54" r="1.5" fill="#22d3ee" filter="url(#eyeGlow)" />
-          <polygon points="82,55 68,57 72,51 81,51" fill="#000000" stroke="#06b6d4" strokeWidth="2" />
-          <circle cx="76" cy="54" r="1.5" fill="#22d3ee" filter="url(#eyeGlow)" />
+          {/* Facet 6: Right Lower Facet */}
+          <polygon 
+            points="75,65 97,80 60,94" 
+            fill="url(#cyanBlueGrad)" 
+            opacity="0.7" 
+            stroke="#ffffff" 
+            strokeWidth="0.5" 
+            strokeOpacity="0.2"
+          />
 
-          {/* Nose & Bridge */}
-          <polygon points="54,58 66,58 60,70" fill="url(#neonGradient)" />
-          <line x1="60" y1="50" x2="60" y2="58" stroke="url(#neonGradient)" strokeWidth="2.5" />
-          
-          {/* Muzzle and Snout */}
-          <path 
-            d="M 46,74 C 48,70 52,68 60,68 C 68,68 72,70 74,74 C 76,79 70,82 60,82 C 50,82 44,79 46,74 Z" 
+          {/* Facet 7: Top Crown Facet */}
+          <polygon 
+            points="60,14 60,26 45,19" 
+            fill="#06b6d4" 
+            opacity="0.4" 
+          />
+          <polygon 
+            points="60,14 60,26 75,19" 
+            fill="#d946ef" 
+            opacity="0.4" 
+          />
+
+          {/* Heavy Base Rock Pedestal */}
+          <polygon 
+            points="32,94 88,94 60,106" 
             fill="#020617" 
             stroke="url(#neonGradient)" 
-            strokeWidth="2" 
+            strokeWidth="1.5" 
           />
-          
-          {/* FANGS & TEETH */}
-          <polygon points="49,75 53,75 51,83" fill="#ffffff" />
-          <polygon points="71,75 67,75 69,83" fill="#ffffff" />
-          
-          {/* Muscular Chin & Low Jaw */}
-          <polygon points="52,82 68,82 60,94" fill="#020617" stroke="url(#cyanBlueGrad)" strokeWidth="2" />
-          
-          {/* Intense Tiger Eye-brow Stripes */}
-          <path d="M 34,48 L 48,51 L 44,46 Z" fill="url(#neonGradient)" />
-          <path d="M 86,48 L 72,51 L 76,46 Z" fill="url(#neonGradient)" />
+
+          {/* Small Sparks */}
+          <circle cx="28" cy="40" r="1.5" fill="#22d3ee" filter="url(#rockGlow)" />
+          <circle cx="92" cy="40" r="1.5" fill="#f43f5e" filter="url(#rockGlow)" />
+          <circle cx="60" cy="18" r="1" fill="#a855f7" />
         </svg>
       </div>
 
       {showText && (
         <div className="flex flex-col">
           <span className="font-display font-black text-xl sm:text-2xl tracking-tighter uppercase leading-none select-none text-white">
-            FITNESS<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 font-extrabold ml-1">TIGER GYM</span>
+            THE<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 font-extrabold ml-1">ROCK GYM</span>
           </span>
           <span className="text-[9px] font-mono tracking-[0.2em] font-semibold text-cyan-400 uppercase leading-none mt-1.5">
-            PATNA • LUXURY GYM
+            PATNA • LUXURY FITNESS
           </span>
         </div>
       )}

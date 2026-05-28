@@ -17,8 +17,8 @@ export default function Trainers() {
 
     setSessionBooked(true);
     setTimeout(() => {
-      const text = encodeURIComponent(`Hi Tiger Fitness! I'm ${bookName}. I would like to book my FREE 1-on-1 personal training orientation slot with ${selectedTrainer?.name}. Goal: ${bookGoal}. Phone: ${bookPhone}. Please confirm!`);
-      window.open(`https://wa.me/916202730517?text=${text}`, '_blank');
+      const text = encodeURIComponent(`Hi The Rock Gym! I'm ${bookName}. I would like to book my FREE 1-on-1 personal training orientation slot with ${selectedTrainer?.name}. Goal: ${bookGoal}. Phone: ${bookPhone}. Please confirm!`);
+      window.open(`https://wa.me/918227822710?text=${text}`, '_blank');
       
       setSessionBooked(false);
       setSelectedTrainer(null);
@@ -155,7 +155,7 @@ export default function Trainers() {
               
               <div className="flex justify-between items-start mb-6">
                 <div>
-                  <span className="text-[10px] font-mono uppercase text-cyan-400 tracking-widest font-extrabold">Tiger VIP Trial Lab</span>
+                  <span className="text-[10px] font-mono uppercase text-cyan-400 tracking-widest font-extrabold">Rock Gym VIP Trial Lab</span>
                   <h3 className="font-display font-extrabold text-2xl uppercase tracking-tight text-white mt-1">
                     Book Free Session
                   </h3>
@@ -248,7 +248,7 @@ export default function Trainers() {
                   </button>
 
                   <p className="text-[10px] text-zinc-500 text-center leading-relaxed mt-2 uppercase tracking-tight">
-                    *Limited to 1 trial orientation per person. No hidden costs. Tiger Fitness Patna guarantees client data privacy.
+                    *Limited to 1 trial orientation per person. No hidden costs. The Rock Gym Patna guarantees client data privacy.
                   </p>
 
                 </form>

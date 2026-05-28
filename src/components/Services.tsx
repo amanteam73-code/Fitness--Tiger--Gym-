@@ -60,8 +60,8 @@ export default function Services() {
     : augmentedServices.filter(service => service.category === activeTab);
 
   const getInquiryUrl = (serviceName: string) => {
-    const text = encodeURIComponent(`Hi Tiger Fitness! I'm interested in enrolling in the "${serviceName}" program at your Patna gym. Could you please share slot timings and coach fees?`);
-    return `https://wa.me/916202730517?text=${text}`;
+    const text = encodeURIComponent(`Hi The Rock Gym! I'm interested in enrolling in the "${serviceName}" program at your Patna gym. Could you please share slot timings and coach fees?`);
+    return `https://wa.me/918227822710?text=${text}`;
   };
 
   return (

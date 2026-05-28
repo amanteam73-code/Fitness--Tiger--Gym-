@@ -21,13 +21,13 @@ export const HERO_IMAGE = heroImage;
 export const SAUNA_IMAGE = saunaImage;
 
 export const BUSINESS_INFO = {
-  name: 'Fitness Tiger Gym',
+  name: 'The Rock Gym',
   rating: 4.9,
-  reviewsCount: 5000,
-  address: '1st Floor, Rampur Lane, Near Ram Ratan Hospital, Musallahpur Hat, Bazar Samiti, Bahadurpur, Patna, Bihar 800006',
-  phone: '6202730517',
-  phoneFormatted: '+91 62027 30517',
-  whatsappUrl: 'https://wa.me/916202730517?text=Hi%20Tiger%20Fitness%2C%20I%20am%20interested%20in%20joining%20the%20gym.%20Please%20share%20membership%20details!',
+  reviewsCount: 5200,
+  address: '4th Floor, K D Roy Campus, NIT More, Lalbagh, Patna, Bihar 800006',
+  phone: '082278 22710',
+  phoneFormatted: '+91 82278 22710',
+  whatsappUrl: 'https://wa.me/918227822710?text=Hi%20The%20Rock%20Gym%2C%20I%20am%20interested%20in%20joining%20the%20gym.%20Please%20share%20membership%20details!',
   hours: [
     { day: 'Monday - Saturday', time: '05:00 AM - 10:00 PM' },
     { day: 'Sunday', time: '06:00 AM - 12:00 PM (Special Cardio)' }
@@ -42,12 +42,20 @@ export const BUSINESS_INFO = {
 
 export const SERVICES: ServiceItem[] = [
   {
-    id: 'hiit',
-    title: 'HIIT Training',
-    description: 'High-intensity interval workouts designed to torch fat, skyrocket metabolism, and build cardiovascular endurance in record time.',
-    iconName: 'Flame',
+    id: 'aerobics',
+    title: 'Aerobics',
+    description: 'Energetic group workouts combining rhythmic aerobic exercises with body-weight resistance routines.',
+    iconName: 'Zap',
     category: 'cardio',
-    bgGradient: 'from-orange-500/20 to-red-500/20'
+    bgGradient: 'from-violet-500/20 to-red-500/20'
+  },
+  {
+    id: 'child-care',
+    title: 'Child Care Services',
+    description: 'Secure, professional, and engaging supervised play zones for your little ones while you focus entirely on your premium workouts.',
+    iconName: 'Heart',
+    category: 'specialty',
+    bgGradient: 'from-pink-500/20 to-blue-500/20'
   },
   {
     id: 'crossfit',
@@ -58,28 +66,28 @@ export const SERVICES: ServiceItem[] = [
     bgGradient: 'from-red-600/20 to-orange-600/20'
   },
   {
-    id: 'zumba',
-    title: 'Zumba Cardio',
-    description: 'Fuse international high-energy beats with professional choreography for an engaging, calorie-burning absolute dance party.',
+    id: 'cycling',
+    title: 'Cycling Studio',
+    description: 'Pedal through intense climbs and sprints. Improvised heavy background beats align with structured RPM and heart-rate tracking.',
+    iconName: 'Bike',
+    category: 'cardio',
+    bgGradient: 'from-cyan-500/20 to-indigo-500/20'
+  },
+  {
+    id: 'dance-fitness',
+    title: 'Dance Fitness Classes',
+    description: 'Energetic and upbeat fitness programs that blend lively choreography and high-tempo music for an engaging, full-body cardiovascular sweat sessions.',
     iconName: 'Music',
     category: 'cardio',
-    bgGradient: 'from-pink-500/20 to-brand-orange/20'
+    bgGradient: 'from-amber-500/20 to-pink-500/20'
   },
   {
-    id: 'yoga',
-    title: 'Yoga Classes',
-    description: 'Rebalance mind and body. Improve flexibility, physical alignment, posture, and release core mental stress with expert Yogis.',
-    iconName: 'Sparkles',
-    category: 'mind-body',
-    bgGradient: 'from-blue-500/20 to-indigo-500/20'
-  },
-  {
-    id: 'weight-training',
-    title: 'Weight Training',
-    description: 'Unleash raw strength. Target hypertrophy, muscle symmetry, power development, and safety-guided structural bone density builds.',
-    iconName: 'Activity',
-    category: 'strength',
-    bgGradient: 'from-amber-600/20 to-red-600/20'
+    id: 'nutrition-consulting',
+    title: 'Nutrition Consulting',
+    description: 'Transform your body from the inside out. Receive weekly calorie targets, meal structures, supplementation advice, and habit audits.',
+    iconName: 'Apple',
+    category: 'specialty',
+    bgGradient: 'from-green-500/20 to-emerald-500/20'
   },
   {
     id: 'personal-training',
@@ -90,28 +98,44 @@ export const SERVICES: ServiceItem[] = [
     bgGradient: 'from-yellow-500/20 to-orange-500/20'
   },
   {
-    id: 'nutrition',
-    title: 'Nutrition Consulting',
-    description: 'Transform your body from the inside out. Receive weekly calorie targets, meal structures, supplementation advice, and habit audits.',
-    iconName: 'Apple',
+    id: 'weight-training',
+    title: 'Weight Training',
+    description: 'Unleash raw strength. Target hypertrophy, muscle symmetry, power development, and safety-guided structural bone density builds.',
+    iconName: 'Activity',
+    category: 'strength',
+    bgGradient: 'from-amber-600/20 to-red-600/20'
+  },
+  {
+    id: 'yoga-classes',
+    title: 'Yoga Classes',
+    description: 'Rebalance mind and body. Improve flexibility, physical alignment, posture, and release core mental stress with expert Yogis.',
+    iconName: 'Sparkles',
+    category: 'mind-body',
+    bgGradient: 'from-blue-500/20 to-indigo-500/20'
+  },
+  {
+    id: 'youth-classes',
+    title: 'Youth Classes',
+    description: 'Supervised active classes tailored to foster coordination, athleticism, motor skills, and functional mobility in youngsters.',
+    iconName: 'Users',
     category: 'specialty',
-    bgGradient: 'from-green-500/20 to-emerald-500/20'
+    bgGradient: 'from-emerald-500/20 to-teal-500/20'
   },
   {
-    id: 'cycling',
-    title: 'Indoor Cycling',
-    description: 'Pedal through intense climbs and sprints. Improvised heavy background beats align with structured RPM and heart-rate tracking.',
-    iconName: 'Bike',
-    category: 'cardio',
-    bgGradient: 'from-cyan-500/20 to-brand-orange/20'
+    id: 'youth-sports',
+    title: 'Youth Sports Training',
+    description: 'Foundational strength, safety techniques, teamwork drills, and endurance conditioning designed specially for young sports enthusiasts.',
+    iconName: 'Trophy',
+    category: 'strength',
+    bgGradient: 'from-violet-500/20 to-indigo-500/20'
   },
   {
-    id: 'aerobics',
-    title: 'Aerobics',
-    description: 'Energetic group workouts combining rhythmic aerobic exercises with body-weight resistance routines.',
-    iconName: 'Zap',
+    id: 'zumba',
+    title: 'Zumba Classes',
+    description: 'Fuse international high-energy beats with professional choreography for an engaging, calorie-burning absolute dance party.',
+    iconName: 'Flame',
     category: 'cardio',
-    bgGradient: 'from-violet-500/20 to-red-500/20'
+    bgGradient: 'from-pink-500/20 to-orange-500/20'
   }
 ];
 
@@ -271,7 +295,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     role: 'Software Engineer',
     rating: 5,
     beforeImg: 'https://images.unsplash.com/photo-1517438327276-14e5300c3a48?q=80&w=150', // abstract or icon representation
-    comment: 'Tiger Fitness completely turned my health around. From being over 95 kg with chronic backache, the expert guidance of Coach Rahul helped me melt 18 kg fat and gain solid strength in 6 months.',
+    comment: 'The Rock Gym completely turned my health around. From being over 95 kg with chronic backache, the expert guidance of Coach Rahul helped me melt 18 kg fat and gain solid strength in 6 months.',
     achievement: 'Lost 18 kg & Regained Core Lumbar Strength',
     duration: '6 Month Transformation'
   },
@@ -289,7 +313,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     name: 'Ravi Raj',
     role: 'Business Owner',
     rating: 5,
-    comment: ' Patna definitely needed an international standard space like Tiger Fitness! The imported biomechanical biomechanical pulley machines are exceptionally easy on joints, letting me pull heavy numbers without injury risks.',
+    comment: ' Patna definitely needed an international standard space like The Rock Gym! The imported biomechanical biomechanical pulley machines are exceptionally easy on joints, letting me pull heavy numbers without injury risks.',
     achievement: 'Hypertrophy Boost & Gained 5kg Clean Muscle',
     duration: '12 Weeks Result'
   }

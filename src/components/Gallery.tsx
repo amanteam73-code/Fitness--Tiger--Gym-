@@ -44,7 +44,7 @@ export default function Gallery() {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-cyan-400 font-mono text-[10px] sm:text-xs uppercase tracking-widest block mb-2 font-semibold">Visual Tour</span>
           <h2 className="font-display font-extrabold text-3xl sm:text-5xl text-white uppercase tracking-tight">
-            TIGER <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 font-black">SANCTUARY GALLERY</span>
+            THE ROCK <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 font-black">SANCTUARY GALLERY</span>
           </h2>
           <p className="text-zinc-400 text-sm sm:text-base font-light mt-4 leading-relaxed">
             Step inside Patna’s most premium bodybuilding and conditioning arena. Designed with sleek frameworks, rich ambient wood sauna and clinical safety rigs.
@@ -122,7 +122,7 @@ export default function Gallery() {
         {/* Highlight Quote */}
         <div className="mt-14 text-center">
           <p className="text-zinc-550 font-mono text-xs uppercase tracking-widest font-semibold">
-            *All photographs are taken in Tiger Fitness বাহাদুরপুর branch premises. Come take your free physical tour!
+            *All photographs are taken in The Rock Gym NIT More Lalbagh branch premises. Come take your free physical tour!
           </p>
         </div>
 

@@ -137,7 +137,7 @@ export default function Footer() {
               BRANCH ADDRESS
             </h4>
             <p className="text-zinc-400 font-sans leading-relaxed">
-              1st Floor, Rampur Lane, Near Ram Ratan Hospital, Bazar Samiti, Bahadurpur, Patna-800006
+              4th Floor, K D Roy Campus, NIT More, Lalbagh, Patna, Bihar 800006
             </p>
             <div className="pt-2">
               <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-widest block mb-1">General Inquiries</span>
@@ -146,7 +146,7 @@ export default function Footer() {
                 id="footer-call"
                 className="text-white hover:text-cyan-400 font-mono font-extrabold transition-all text-sm block"
               >
-                +91 {BUSINESS_INFO.phoneFormatted}
+                {BUSINESS_INFO.phoneFormatted}
               </a>
             </div>
           </div>
@@ -199,7 +199,7 @@ export default function Footer() {
         {/* Legal copyright footer base */}
         <div className="mt-12 pt-8 border-t border-zinc-900/60 flex flex-col sm:flex-row items-center justify-between gap-6">
           <p className="text-zinc-500 font-mono text-[10px] text-center sm:text-left uppercase tracking-widest font-semibold">
-            © {new Date().getFullYear()} TIGER FITNESS PATNA. ALL RIGHTS RESERVED. 
+            © {new Date().getFullYear()} THE ROCK GYM PATNA. ALL RIGHTS RESERVED. 
           </p>
 
           <button

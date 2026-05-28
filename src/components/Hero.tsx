@@ -63,7 +63,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <img
           src={HERO_IMAGE}
-          alt="Tiger Fitness Luxury Gym Patna"
+          alt="The Rock Gym Luxury Gym Patna"
           className="w-full h-full object-cover object-center opacity-25 select-none scale-105 animate-[zoom-slow_20s_infinite_alternate]"
           referrerPolicy="no-referrer"
           onError={(e) => {
@@ -160,7 +160,7 @@ export default function Hero() {
             className="px-6 py-4 rounded-xl font-display text-sm font-bold text-white tracking-wider bg-emerald-600/90 hover:bg-emerald-600 hover:shadow-[0_0_20px_rgba(16,185,129,0.35)] hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center space-x-3 duration-300"
           >
             <MessageCircle className="w-5 h-5 fill-current text-white" />
-            <span>Chat on WhatsApp (+91 62027 30517)</span>
+            <span>Chat on WhatsApp ({BUSINESS_INFO.phoneFormatted})</span>
           </a>
         </motion.div>
 
