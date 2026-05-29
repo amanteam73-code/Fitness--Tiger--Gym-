@@ -46,7 +46,7 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
 
         {/* Brand Typography */}
         <h2 className="font-display font-black text-3xl sm:text-4xl uppercase tracking-tighter text-white mb-2 leading-none">
-          THE<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 font-extrabold ml-1 font-black">ROCK GYM</span>
+          GLOBAL<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 font-extrabold ml-1 font-black">GYM</span>
         </h2>
         <div className="text-[9px] font-mono tracking-[0.25em] text-zinc-500 uppercase mb-8 font-semibold">
           Patna's Premium Wellness Hub

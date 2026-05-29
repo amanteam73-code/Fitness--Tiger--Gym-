@@ -34,8 +34,8 @@ export default function MembershipPlans() {
 
   const handleJoinClick = (planName: string, monthlyRate: string) => {
     const period = billingCycle === 'monthly' ? 'Monthly' : 'Quarterly (3-Months Combo with 15% Off)';
-    const text = encodeURIComponent(`Hi The Rock Gym! I've selected the "${planName}" under the ${period} billing cycle. Please register my slot and share UPI / Cash scan details for Patna NIT More Lalbagh branch. Thank you!`);
-    window.open(`https://wa.me/918227822710?text=${text}`, '_blank');
+    const text = encodeURIComponent(`Hi GLOBAL GYM! I've selected the "${planName}" under the ${period} billing cycle. Please register my slot and share UPI / Cash scan details for Patna Bazar Samiti branch. Thank you!`);
+    window.open(`https://wa.me/919955542052?text=${text}`, '_blank');
   };
 
   return (

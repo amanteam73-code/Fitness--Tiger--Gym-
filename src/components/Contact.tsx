@@ -40,8 +40,8 @@ export default function Contact() {
       setIsSubmitting(false);
       setSubmitSuccess(true);
       
-      const text = encodeURIComponent(`Hi The Rock Gym! I'm ${formName}. I'm writing through the website form. I am interested in "${formService}". Message: ${formMessage}. Phone: ${formPhone}. Let me know slot openings!`);
-      window.open(`https://wa.me/918227822710?text=${text}`, '_blank');
+      const text = encodeURIComponent(`Hi GLOBAL GYM! I'm ${formName}. I'm writing through the website form. I am interested in "${formService}". Message: ${formMessage}. Phone: ${formPhone}. Let me know slot openings!`);
+      window.open(`https://wa.me/919955542052?text=${text}`, '_blank');
 
       setTimeout(() => {
         setSubmitSuccess(false);
@@ -53,7 +53,7 @@ export default function Contact() {
     }, 1500);
   };
 
-  const googleMapSrc = "https://maps.google.com/maps?q=K%20D%20Roy%20Campus%20NIT%20More%20Lalbagh%20Patna&t=&z=15&ie=UTF8&iwloc=&output=embed";
+  const googleMapSrc = "https://maps.google.com/maps?q=GLOBAL%20GYM%20Bazaar%2520Samiti%20near%20Shiv-Kali%20Mandir%20Bahadurpur%20Patna&t=&z=15&ie=UTF8&iwloc=&output=embed";
 
   return (
     <section id="contact" className="py-24 relative bg-[#06050b] bg-grid-pattern overflow-hidden border-t border-purple-500/10">
@@ -70,7 +70,7 @@ export default function Contact() {
             START YOUR <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 font-black">TRANSFORMATION TODAY</span>
           </h2>
           <p className="text-zinc-400 text-sm sm:text-base font-light mt-4 leading-relaxed">
-            Visit our state-of-the-art facility in NIT More, Lalbagh. Send us a message or tap below to directly message our fitness consultants.
+            Visit our state-of-the-art facility in Bazaar Samiti Road, Bahadurpur. Send us a message or tap below to directly message our fitness consultants.
           </p>
         </div>
 
@@ -80,7 +80,7 @@ export default function Contact() {
           {/* Column 1 info list */}
           <div className="lg:col-span-5 space-y-8">
             <h3 className="font-display font-black text-2xl text-white uppercase tracking-wider mb-2 leading-none">
-              THE ROCK GYM <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500">HQ PATNA</span>
+              GLOBAL GYM <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500">HQ PATNA</span>
             </h3>
 
             {/* Address */}
@@ -297,7 +297,7 @@ export default function Contact() {
 
             {/* Location (White/Gold Contact Accent) */}
             <a 
-              href="https://maps.google.com/?q=The+Rock+Gym+NIT+More+Lalbagh+Patna"
+              href="https://maps.google.com/?q=GLOBAL+GYM+Bazaar+Samiti+Rd+near+Shiv+Kali+Mandir+Bahadurpur+Patna+Bihar+800016"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-center space-x-3 px-6 py-4 rounded-2xl bg-cyan-950/20 border border-cyan-500/20 text-cyan-400 hover:bg-cyan-500 hover:text-black hover:shadow-[0_0_20px_rgba(6,182,212,0.3)] hover:border-transparent transition-all duration-300 group cursor-pointer"
@@ -319,14 +319,14 @@ export default function Contact() {
             allowFullScreen={false}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="The Rock Gym Patna Place Map"
+            title="GLOBAL GYM Patna Place Map"
             className="w-full h-full grayscale opacity-65 hover:grayscale-0 hover:opacity-100 transition-all duration-500"
           />
           {/* Absolute corner badge map label */}
           <div className="absolute bottom-6 left-6 bg-zinc-950 text-white rounded-2xl p-4 border border-zinc-800 shadow-2xl max-w-sm pointer-events-none hidden sm:block">
-            <div className="font-display font-black text-xs text-cyan-400 uppercase tracking-widest">THE ROCK GYM LOCATION</div>
+            <div className="font-display font-black text-xs text-cyan-400 uppercase tracking-widest">GLOBAL GYM LOCATION</div>
             <p className="text-zinc-400 text-[10px] mt-1 font-light leading-snug">
-              4th Floor, K D Roy Campus, NIT More, Lalbagh, Patna, Bihar 800006
+              Road Number 13A, Bazaar Samiti Rd, near Shiv-Kali Mandir, Bahadurpur, Patna, Bihar 800016
             </p>
           </div>
         </div>

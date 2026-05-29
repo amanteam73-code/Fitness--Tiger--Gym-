@@ -17,7 +17,7 @@ export default function Logo({ className = "w-12 h-12", showText = true }: LogoP
         {/* Glow behind the logo */}
         <div className="absolute -inset-1.5 rounded-full bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 opacity-40 blur-lg group-hover:opacity-75 transition duration-300" />
         
-        {/* High Definition Vector Shield & Rock Logo */}
+        {/* High Definition Vector Shield & Globe Logo */}
         <svg
           viewBox="0 0 120 120"
           className="w-full h-full relative z-10 filter drop-shadow-[0_4px_12px_rgba(6,182,212,0.3)] transform group-hover:scale-105 transition-transform duration-300"
@@ -37,7 +37,7 @@ export default function Logo({ className = "w-12 h-12", showText = true }: LogoP
               <stop offset="0%" stopColor="#ec4899" />
               <stop offset="100%" stopColor="#7c3aed" />
             </linearGradient>
-            <filter id="rockGlow" x="-20%" y="-20%" width="140%" height="140%">
+            <filter id="globeGlow" x="-20%" y="-20%" width="140%" height="140%">
               <feGaussianBlur stdDeviation="1.5" result="blur" />
               <feComposite in="SourceGraphic" in2="blur" operator="over" />
             </filter>
@@ -59,88 +59,32 @@ export default function Logo({ className = "w-12 h-12", showText = true }: LogoP
             opacity="0.18" 
           />
 
-          {/* GEOMETRIC SOLID ROCK STRUCTURE */}
-          {/* Facet 1: Left Center Facet */}
-          <polygon 
-            points="60,26 45,65 60,94" 
-            fill="url(#cyanBlueGrad)" 
-            opacity="0.85" 
-            stroke="#ffffff" 
-            strokeWidth="0.5" 
-            strokeOpacity="0.2"
-          />
+          {/* GEOMETRIC GLOBE LINES AND GRID */}
+          <circle cx="60" cy="55" r="32" fill="#020617" stroke="url(#cyanBlueGrad)" strokeWidth="1.5" />
+          
+          {/* Latitude Lines */}
+          <path d="M 28,55 Q 60,45 92,55" fill="none" stroke="url(#neonGradient)" strokeWidth="1" opacity="0.4" />
+          <path d="M 32,40 Q 60,32 88,40" fill="none" stroke="url(#cyanBlueGrad)" strokeWidth="1" opacity="0.3" />
+          <path d="M 32,70 Q 60,78 88,70" fill="none" stroke="url(#cyanBlueGrad)" strokeWidth="1" opacity="0.3" />
 
-          {/* Facet 2: Right Center Facet */}
-          <polygon 
-            points="60,26 75,65 60,94" 
-            fill="url(#neonGradient)" 
-            opacity="0.9" 
-            stroke="#ffffff" 
-            strokeWidth="0.5" 
-            strokeOpacity="0.2"
-          />
+          {/* Longitude Lines */}
+          <path d="M 60,23 Q 48,55 60,87" fill="none" stroke="url(#neonGradient)" strokeWidth="1.5" opacity="0.6" />
+          <path d="M 60,23 Q 72,55 60,87" fill="none" stroke="url(#neonGradient)" strokeWidth="1.5" opacity="0.6" />
+          <path d="M 60,23 Q 34,55 60,87" fill="none" stroke="url(#cyanBlueGrad)" strokeWidth="1" opacity="0.3" />
+          <path d="M 60,23 Q 86,55 60,87" fill="none" stroke="url(#cyanBlueGrad)" strokeWidth="1" opacity="0.3" />
+          
+          {/* Center Equator Line */}
+          <line x1="28" y1="55" x2="92" y2="55" stroke="url(#neonGradient)" strokeWidth="2" opacity="0.8" />
+          <line x1="60" y1="23" x2="60" y2="87" stroke="url(#neonGradient)" strokeWidth="2" opacity="0.8" />
 
-          {/* Facet 3: Left Outer Facet */}
-          <polygon 
-            points="60,26 23,80 45,65" 
-            fill="#1e1b4b" 
-            opacity="0.6" 
-            stroke="url(#cyanBlueGrad)" 
-            strokeWidth="0.5" 
-          />
-
-          {/* Facet 4: Right Outer Facet */}
-          <polygon 
-            points="60,26 97,80 75,65" 
-            fill="#311042" 
-            opacity="0.6" 
-            stroke="url(#neonGradient)" 
-            strokeWidth="0.5" 
-          />
-
-          {/* Facet 5: Left Lower Facet */}
-          <polygon 
-            points="45,65 23,80 60,94" 
-            fill="url(#pinkPurpleGrad)" 
-            opacity="0.75" 
-            stroke="#ffffff" 
-            strokeWidth="0.5" 
-            strokeOpacity="0.2"
-          />
-
-          {/* Facet 6: Right Lower Facet */}
-          <polygon 
-            points="75,65 97,80 60,94" 
-            fill="url(#cyanBlueGrad)" 
-            opacity="0.7" 
-            stroke="#ffffff" 
-            strokeWidth="0.5" 
-            strokeOpacity="0.2"
-          />
-
-          {/* Facet 7: Top Crown Facet */}
-          <polygon 
-            points="60,14 60,26 45,19" 
-            fill="#06b6d4" 
-            opacity="0.4" 
-          />
-          <polygon 
-            points="60,14 60,26 75,19" 
-            fill="#d946ef" 
-            opacity="0.4" 
-          />
-
-          {/* Heavy Base Rock Pedestal */}
-          <polygon 
-            points="32,94 88,94 60,106" 
-            fill="#020617" 
-            stroke="url(#neonGradient)" 
-            strokeWidth="1.5" 
-          />
+          {/* Core Power Emblem (A fiery barbell sleeve crossing center) */}
+          <rect x="42" y="52" width="36" height="6" rx="3" fill="url(#pinkPurpleGrad)" filter="url(#globeGlow)" />
+          <circle cx="42" cy="55" r="4" fill="#22d3ee" />
+          <circle cx="78" cy="55" r="4" fill="#f43f5e" />
 
           {/* Small Sparks */}
-          <circle cx="28" cy="40" r="1.5" fill="#22d3ee" filter="url(#rockGlow)" />
-          <circle cx="92" cy="40" r="1.5" fill="#f43f5e" filter="url(#rockGlow)" />
+          <circle cx="28" cy="40" r="1.5" fill="#22d3ee" filter="url(#globeGlow)" />
+          <circle cx="92" cy="40" r="1.5" fill="#f43f5e" filter="url(#globeGlow)" />
           <circle cx="60" cy="18" r="1" fill="#a855f7" />
         </svg>
       </div>
@@ -148,7 +92,7 @@ export default function Logo({ className = "w-12 h-12", showText = true }: LogoP
       {showText && (
         <div className="flex flex-col">
           <span className="font-display font-black text-xl sm:text-2xl tracking-tighter uppercase leading-none select-none text-white">
-            THE<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 font-extrabold ml-1">ROCK GYM</span>
+            GLOBAL<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 font-extrabold ml-1">GYM</span>
           </span>
           <span className="text-[9px] font-mono tracking-[0.2em] font-semibold text-cyan-400 uppercase leading-none mt-1.5">
             PATNA • LUXURY FITNESS

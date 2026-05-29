@@ -1,6 +1,6 @@
 {
-  "name": "The Rock Gym",
-  "description": "Premium, luxury fitness destination in Patna, Bihar, with world-class equipment, certified trainers, sauna, and personalized body transformation programs.",
+  "name": "GLOBAL GYM",
+  "description": "Premium, luxury fitness destination in Bazar Samiti, Patna, Bihar, with world-class equipment, certified trainers, sauna, and personalized body transformation programs.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

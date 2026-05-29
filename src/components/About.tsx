@@ -55,7 +55,7 @@ export default function About() {
             
             <p className="text-zinc-300 font-light text-base sm:text-lg leading-relaxed mb-6">
               Founded on the belief that peak physical health should be paired with extreme architectural comfort, 
-              <strong className="text-white"> The Rock Gym</strong> has pioneered Patna's premium fitness ecosystem. We are committed to shifting 
+              <strong className="text-white"> GLOBAL GYM</strong> has pioneered Patna's premium fitness ecosystem. We are committed to shifting 
               traditional working formats into personalized body transformation journeys.
             </p>
             
@@ -75,7 +75,7 @@ export default function About() {
               </p>
               <div className="mt-3 flex items-center space-x-2">
                 <span className="w-6 h-0.5 bg-gradient-to-r from-cyan-400 to-pink-400" />
-                <span className="text-xs font-mono font-bold uppercase text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">Founders, The Rock Gym</span>
+                <span className="text-xs font-mono font-bold uppercase text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">Founders, GLOBAL GYM</span>
               </div>
             </div>
           </div>
@@ -85,7 +85,7 @@ export default function About() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-zinc-900 border border-purple-500/20 group aspect-[4/5] hover:border-pink-500/40 transition-all duration-300 shadow-purple-500/5">
               <img
                 src={SAUNA_IMAGE}
-                alt="The Rock Gym Premium Sauna Facility"
+                alt="GLOBAL GYM Premium Sauna Facility"
                 className="w-full h-full object-cover transform duration-700 group-hover:scale-105"
                 referrerPolicy="no-referrer"
                 onError={(e) => {

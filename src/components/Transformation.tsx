@@ -305,8 +305,8 @@ export default function Transformation() {
                     <button
                       id="btn-calc-apply"
                       onClick={() => {
-                        const text = encodeURIComponent(`Hi The Rock Gym! I used your online Physique Planner and got a daily target of ${calcResult.dailyCal} kcal, ${calcResult.protein}g protein, with a transition timeframe of ${calcResult.durationWeeks} weeks. I'm excited to enrol for my branch trials!`);
-                        window.open(`https://wa.me/918227822710?text=${text}`, '_blank');
+                        const text = encodeURIComponent(`Hi GLOBAL GYM! I used your online Physique Planner and got a daily target of ${calcResult.dailyCal} kcal, ${calcResult.protein}g protein, with a transition timeframe of ${calcResult.durationWeeks} weeks. I'm excited to enrol for my branch trials!`);
+                        window.open(`https://wa.me/919955542052?text=${text}`, '_blank');
                       }}
                       className="w-full py-3.5 rounded-xl bg-zinc-950 hover:bg-zinc-900 text-zinc-300 hover:text-white font-display font-bold text-xs uppercase tracking-wider flex items-center justify-center space-x-2 transition-all cursor-pointer border border-zinc-850 hover:border-cyan-500/25 duration-300"
                     >

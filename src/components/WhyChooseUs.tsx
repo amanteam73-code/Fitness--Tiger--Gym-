@@ -42,7 +42,7 @@ export default function WhyChooseUs() {
         <div className="text-center max-w-2xl mx-auto mb-20">
           <span className="text-cyan-400 font-mono text-[10px] sm:text-xs uppercase tracking-widest block mb-2 font-semibold">Exquisite Amenities</span>
           <h2 className="font-display font-extrabold text-3xl sm:text-5xl text-white uppercase tracking-tight">
-            WHY CHOOSE <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 font-black">THE ROCK GYM</span>?
+            WHY CHOOSE <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 font-black">GLOBAL GYM</span>?
           </h2>
           <p className="text-zinc-400 text-sm sm:text-base font-light mt-4 leading-relaxed">
             We are Patna's premium destination. We blend luxury design aesthetics with clinical athletic coaching to offer you an unparalleled physical wellness sanctuary.
@@ -102,7 +102,7 @@ export default function WhyChooseUs() {
 
                 {/* Bottom decorative stats hint */}
                 <div className="mt-6 pt-4 border-t border-zinc-900/60 flex justify-between items-center text-[10px] font-mono text-zinc-500">
-                  <span className="uppercase tracking-wider">Rock Gym Standard</span>
+                  <span className="uppercase tracking-wider">GLOBAL GYM Standard</span>
                   <span>0{index + 1}</span>
                 </div>
 

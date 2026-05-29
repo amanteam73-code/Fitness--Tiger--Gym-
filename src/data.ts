@@ -21,13 +21,13 @@ export const HERO_IMAGE = heroImage;
 export const SAUNA_IMAGE = saunaImage;
 
 export const BUSINESS_INFO = {
-  name: 'The Rock Gym',
-  rating: 4.9,
-  reviewsCount: 5200,
-  address: '4th Floor, K D Roy Campus, NIT More, Lalbagh, Patna, Bihar 800006',
-  phone: '082278 22710',
-  phoneFormatted: '+91 82278 22710',
-  whatsappUrl: 'https://wa.me/918227822710?text=Hi%20The%20Rock%20Gym%2C%20I%20am%20interested%20in%20joining%20the%20gym.%20Please%20share%20membership%20details!',
+  name: 'GLOBAL GYM',
+  rating: 4.5,
+  reviewsCount: 751,
+  address: 'Road Number 13A, Bazaar Samiti Rd, near Shiv-Kali Mandir, Bahadurpur, Patna, Bihar 800016',
+  phone: '099555 42052',
+  phoneFormatted: '+91 99555 42052',
+  whatsappUrl: 'https://wa.me/919955542052?text=Hi%20Global%20Gym%2C%20I%20am%20interested%20in%20joining%20the%20gym.%20Please%20share%20membership%20details!',
   hours: [
     { day: 'Monday - Saturday', time: '05:00 AM - 10:00 PM' },
     { day: 'Sunday', time: '06:00 AM - 12:00 PM (Special Cardio)' }
@@ -295,7 +295,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     role: 'Software Engineer',
     rating: 5,
     beforeImg: 'https://images.unsplash.com/photo-1517438327276-14e5300c3a48?q=80&w=150', // abstract or icon representation
-    comment: 'The Rock Gym completely turned my health around. From being over 95 kg with chronic backache, the expert guidance of Coach Rahul helped me melt 18 kg fat and gain solid strength in 6 months.',
+    comment: 'GLOBAL GYM completely turned my health around. From being over 95 kg with chronic backache, the expert guidance of Coach Rahul helped me melt 18 kg fat and gain solid strength in 6 months.',
     achievement: 'Lost 18 kg & Regained Core Lumbar Strength',
     duration: '6 Month Transformation'
   },
@@ -313,7 +313,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     name: 'Ravi Raj',
     role: 'Business Owner',
     rating: 5,
-    comment: ' Patna definitely needed an international standard space like The Rock Gym! The imported biomechanical biomechanical pulley machines are exceptionally easy on joints, letting me pull heavy numbers without injury risks.',
+    comment: ' Patna definitely needed an international standard space like GLOBAL GYM! The imported biomechanical biomechanical pulley machines are exceptionally easy on joints, letting me pull heavy numbers without injury risks.',
     achievement: 'Hypertrophy Boost & Gained 5kg Clean Muscle',
     duration: '12 Weeks Result'
   }

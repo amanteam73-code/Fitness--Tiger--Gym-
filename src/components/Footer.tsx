@@ -199,7 +199,7 @@ export default function Footer() {
         {/* Legal copyright footer base */}
         <div className="mt-12 pt-8 border-t border-zinc-900/60 flex flex-col sm:flex-row items-center justify-between gap-6">
           <p className="text-zinc-500 font-mono text-[10px] text-center sm:text-left uppercase tracking-widest font-semibold">
-            © {new Date().getFullYear()} THE ROCK GYM PATNA. ALL RIGHTS RESERVED. 
+            © {new Date().getFullYear()} GLOBAL GYM PATNA. ALL RIGHTS RESERVED. 
           </p>
 
           <button

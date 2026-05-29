@@ -63,7 +63,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <img
           src={HERO_IMAGE}
-          alt="The Rock Gym Luxury Gym Patna"
+          alt="GLOBAL GYM Luxury Gym Patna"
           className="w-full h-full object-cover object-center opacity-25 select-none scale-105 animate-[zoom-slow_20s_infinite_alternate]"
           referrerPolicy="no-referrer"
           onError={(e) => {
